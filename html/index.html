@@ -7,8 +7,18 @@
     <title>Happy Birthday Tori!</title>
 </head>
 <body>
-    <div class="bubble-text">Happy 8th<br>Birthday Tori!</div>
-    <button id="musicToggle">🎵 Play Music</button>
+
+    <!-- Envelope icon or image button to reveal content -->
+    <div id="envelopeContainer">
+      <button id="envelopeButton">📩 Open Envelope</button>
+  </div>
+
+  <!-- Birthday content initially hidden -->
+  <div id="birthdayContent" class="hidden">
+      <div class="bubble-text">Happy 8th<br>Birthday Tori!</div>
+      <button id="musicToggle">🎵 Play Music</button>
+
+      <!-- Hidden audio element that will play the music -->
     <audio id="birthdaySong" loop>
     <source src="/Happy-Birthday-Tori/audio/Busy Signal - Happy Birthday (AI Video).mp3" type="audio/mp3">
     </audio>
