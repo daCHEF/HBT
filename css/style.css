@@ -84,18 +84,50 @@ body {
     background-color: #ff8cc6;
 }
 
-/* Hide the birthday content initially */
+/* Hidden content initially */
 .hidden {
     display: none;
 }
 
-/* Style the envelope button */
+/* Bubble Text Styling */
+.bubble-text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: #ff69b4;
+    text-align: center;
+    margin: 20px;
+    animation: floatText 0.s infinite alternate ease-in-out;
+}
+
+/* Animation for Bubble Text */
+@keyframes floatText {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+/* Define the popIn animation */
+@keyframes popIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Center the envelope button */
 #envelopeContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #ffd6e7;
+    height: 100vh; /* Takes up the full height of the viewport */
+    background-color: #ffd6e7; /* Optional background for the envelope screen */
 }
 
 #envelopeButton {
