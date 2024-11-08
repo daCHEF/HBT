@@ -83,3 +83,32 @@ body {
     transform: scale(1.1);
     background-color: #ff8cc6;
 }
+
+/* Hide the birthday content initially */
+.hidden {
+    display: none;
+}
+
+/* Style the envelope button */
+#envelopeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffd6e7;
+}
+
+#envelopeButton {
+    font-size: 2em;
+    padding: 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#envelopeButton:hover {
+    transform: scale(1.1);
+}
